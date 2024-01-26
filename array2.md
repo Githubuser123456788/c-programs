@@ -1,5 +1,5 @@
+// write a program to find the product of all elements in an array
 #include <stdio.h>
-
 int main() {
      int size,arr[size],i,prod=1;
      printf("Enter the size of array :\n");
