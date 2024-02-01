@@ -15,10 +15,11 @@ void main()
 printf("\nEnter element x to compare the pairs :");
      scanf("%d",&x); 
      for(i=0;i<size;i++){
-        for(int j=0;j<size;j++){
-            arr[i]+=arr[j];
-            if(arr[i]==x)
+        for(int j=i+1;j<size;j++){
+            if(arr[i]+arr[j]==x){
             count++;
+            printf("(%d,%d)",arr[i],arr[j]);
+            }
         }
     }
     printf("%d number of pairs in the array",count);
